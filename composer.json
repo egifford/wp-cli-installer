@@ -1,0 +1,22 @@
+{
+  "name"        : "blueblazeassociates/wp-cli-installer",
+  "description" : "Helper scripts for managing WP-CLI with Composer.",
+  "type"        : "project",
+  "homepage"    : "https://github.com/blueblazeassociates/wp-cli-installer",
+  "license"     : "MIT",
+  "authors" : [{
+      "name"     : "Blue Blaze Associates",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Owner",
+      "email"    : "admin@blueblazeassociates.com"
+    }, {
+      "name"     : "Ed Gifford",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Developer",
+      "email"    : "egifford@blueblazeassociates.com"
+    }
+  ],
+  "require": {
+    "wp-cli/wp-cli": "0.25.0"
+  }
+}
