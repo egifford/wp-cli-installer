@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Include the link script.
+source link
+
+# 
+composer --no-dev --optimize-autoloader install --quiet 
+
+#
+link wp vendor/bin/wp
