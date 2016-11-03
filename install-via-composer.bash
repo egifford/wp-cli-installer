@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Setup variables that determine whether to output messages.
 DO_VERSION="NO"
@@ -40,7 +40,7 @@ then
 fi
 
 # Include the link script.
-source link.sh
+source link.bash
 
 # If vendor directory already exists, WP-CLI is probably already installed.
 if [ -d "vendor" ]; then
