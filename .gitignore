@@ -5,4 +5,4 @@
 /.project
 /vendor
 /composer.lock
-/wp
+/bin/wp
