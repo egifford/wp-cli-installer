@@ -4,7 +4,7 @@
 source utils/settings.bash
 
 # Include the link script.
-source ${UTILS_DIR}link.bash
+source ${UTILS_DIR}filesystem.bash
 
 # Include text variables.
 source ${UTILS_DIR}install-text.bash

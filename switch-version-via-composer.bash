@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Include the link script.
-source link.bash
+source ${UTILS_DIR}filesystem.bash
 
 echo "This script will install WP-CLI using Composer. This type of installation isn't as compact as"
 echo "a PHAR installation but does make it easier to switch and rollback versions."
