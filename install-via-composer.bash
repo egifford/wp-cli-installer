@@ -1,17 +1,20 @@
 #!/bin/bash
 
+# Include settings.
+source utils/settings.bash
+
 # Include the link script.
-source utils/link.bash
+source ${UTILS_DIR}link.bash
 
 # Include text variables.
-source utils/text.bash
+source ${UTILS_DIR}install-text.bash
 
 # Process command line arguments.
-source utils/args.bash
+source ${UTILS_DIR}args.bash
 
 # Check the installation to make sure we're not clobbering anything.
 # Make the user do the clobbering.
-source utils/install-check.bash
+source ${UTILS_DIR}install-check.bash
 
 # Looks everything is OK.
 
