@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-composer remove wp-cli/wp-cli --quiet
-composer --update-no-dev --optimize-autoloader require wp-cli/wp-cli:$1 --quiet
