@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Include the link script.
-source link.bash
+source utils/link.bash
 
 echo "This script will install WP-CLI as a PHAR using Curl. This type of installation is very compact"
 echo "but does not make it easier to switch and rollback versions."

@@ -40,7 +40,7 @@ then
 fi
 
 # Include the link script.
-source link.bash
+source utils/link.bash
 
 # If vendor directory already exists, WP-CLI is probably already installed.
 if [ -d "vendor" ]; then
