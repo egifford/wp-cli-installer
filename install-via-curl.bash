@@ -3,8 +3,11 @@
 # Include the link script.
 source utils/link.bash
 
-echo "This script will install WP-CLI as a PHAR using Curl. This type of installation is very compact"
-echo "but does not make it easier to switch and rollback versions."
+# Include text variables.
+source utils/text.bash
+
+# Process command line arguments.
+source utils/args.bash
 
 # If vendor directory already exists, WP-CLI is probably already installed.
 if [ -d "vendor" ]; then
@@ -15,7 +18,7 @@ if [ -d "vendor" ]; then
 fi  
 
 # If wp symlink already exists, WP-CLI is probably already installed.
-if [ -h "wp" ]; then
+if [ -h "bin/wp" ]; then
   echo ""
   echo "A 'wp' symlink is already present from a previous installation. Delete it and then run this script again."
   exit 0
@@ -32,12 +35,16 @@ fi
 
 # Looks everything is OK.
 
+# Let the user know that something is happening.
+echo "Installing..."
+
 # Use composer to install WP-CLI. 
 curl --silent -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
 
 # Setup a symlink to WP-CLI.
-link wp wp-cli.phar
+link bin/wp wp-cli.phar
 
 # Let the user know.
 echo ""
-echo "WP-CLI is now installed. Check if it is working by running 'wp --info'."
+echo "WP-CLI is now installed. Check if it is working by running 'bin/wp --info'."
+echo "For a global installation, add this package's bin directory to your path."
