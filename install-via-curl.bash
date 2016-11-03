@@ -19,7 +19,7 @@ source ${UTILS_DIR}install-check.bash
 # Looks everything is OK.
 
 # Let the user know that something is happening.
-echo "Installing..."
+echo "$WAITING_TEXT"
 
 # Use composer to install WP-CLI. 
 curl --silent --output bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
@@ -28,6 +28,4 @@ curl --silent --output bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/
 link bin/wp wp-cli.phar
 
 # Let the user know.
-echo ""
-echo "WP-CLI is now installed. Check if it is working by running 'bin/wp --info'."
-echo "For a global installation, add this package's bin directory to your path."
+echo "$FINISHED_TEXT"

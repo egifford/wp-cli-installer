@@ -8,3 +8,9 @@ This script will install WP-CLI using Composer. This type of installation isn't 
 installation but does make it easy to move between versions.
 
 usage: install-via-composer.sh [--version] [--help]"
+
+WAITING_TEXT="Installing..."
+
+FINISHED_TEXT="
+WP-CLI is now installed. Check if it is working by running 'bin/wp --info'.
+For a global installation, add this package's bin directory to your path."
