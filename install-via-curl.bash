@@ -22,10 +22,10 @@ source ${UTILS_DIR}install-check.bash
 echo "$WAITING_TEXT"
 
 # Use composer to install WP-CLI. 
-curl --silent --output bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
+curl --silent --output ${BIN_DIR}wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
 
 # Setup a symlink to WP-CLI.
-link bin/wp wp-cli.phar
+link ${BIN_DIR}wp wp-cli.phar
 
 # Let the user know.
 echo "$FINISHED_TEXT"

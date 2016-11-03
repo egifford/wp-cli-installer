@@ -25,7 +25,7 @@ echo "$WAITING_TEXT"
 composer install --no-dev --optimize-autoloader --quiet
 
 # Setup a symlink to WP-CLI.
-link bin/wp ../vendor/wp-cli/wp-cli/bin/wp
+link ${BIN_DIR}wp ../vendor/wp-cli/wp-cli/bin/wp
 
 # Let the user know.
 echo "$FINISHED_TEXT"
