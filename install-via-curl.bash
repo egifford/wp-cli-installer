@@ -39,7 +39,7 @@ fi
 echo "Installing..."
 
 # Use composer to install WP-CLI. 
-curl --silent -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
+curl --silent --output bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
 
 # Setup a symlink to WP-CLI.
 link bin/wp wp-cli.phar

@@ -6,3 +6,4 @@
 /vendor
 /composer.lock
 /bin/wp
+/bin/wp-cli.phar

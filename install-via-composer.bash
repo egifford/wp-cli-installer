@@ -9,29 +9,9 @@ source utils/text.bash
 # Process command line arguments.
 source utils/args.bash
 
-# If vendor directory already exists, WP-CLI is probably already installed.
-if [ -d "vendor" ]; then
-  echo ""
-  echo "A 'vendor' directory is already present from a previous installation. Delete it and then run this script again."
-  exit 0
-  echo ""
-fi  
-
-# If wp symlink already exists, WP-CLI is probably already installed.
-if [ -h "bin/wp" ]; then
-  echo ""
-  echo "A 'wp' symlink is already present from a previous installation. Delete it and then run this script again."
-  exit 0
-  echo ""
-fi
-
-# If wp symlink already exists, WP-CLI is probably already installed.
-if [ -e "wp-cli.phar" ]; then
-  echo ""
-  echo "A 'wp-cli.phar' file is already present from a previous installation. Delete it and then run this script again."
-  exit 0
-  echo ""
-fi
+# Check the installation to make sure we're not clobbering anything.
+# Make the user do the clobbering.
+source utils/install-check.bash
 
 # Looks everything is OK.
 
