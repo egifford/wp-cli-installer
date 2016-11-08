@@ -18,4 +18,4 @@ WAITING_TEXT="Installing..."
 
 FINISHED_TEXT="
 WP-CLI is now installed. Check if it is working by running '${BIN_DIR}wp --info'.
-For a global installation, add this package's bin directory to your path."
+For a global installation, add this package's bin directory to your path ($BIN_DIR_ABSOLUTE)."

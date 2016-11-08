@@ -6,6 +6,9 @@ source utils/settings.bash
 # Include the link script.
 source ${UTILS_DIR}filesystem.bash
 
+# Capture/set the absolute path for BIN_DIR.
+BIN_DIR_ABSOLUTE=$(realpath_cp $PWD/${BIN_DIR})
+
 # Include text variables.
 source ${UTILS_DIR}install-text.bash
 
