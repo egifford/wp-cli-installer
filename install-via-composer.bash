@@ -22,7 +22,7 @@ source ${UTILS_DIR}install-check.bash
 echo "$WAITING_TEXT"
 
 # Use composer to install WP-CLI. 
-composer install --no-dev --optimize-autoloader --quiet
+composer install --no-dev --optimize-autoloader${DO_QUIET_COMPOSER}
 
 # Setup a symlink to WP-CLI.
 link ${BIN_DIR}wp ../vendor/wp-cli/wp-cli/bin/wp

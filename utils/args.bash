@@ -5,17 +5,24 @@
 # Setup variables that determine whether to output messages.
 DO_VERSION="NO"
 DO_HELP="NO"
+DO_QUIET_COMPOSER=" --quiet"
+DO_QUIET_CURL=" --silent"
 
 # Process command line arguments.
 for ARGUMENT in "$@"; do
   case $ARGUMENT in
     "--version")
       DO_VERSION="YES"
-      shift # past argument=value
+      shift
       ;;
     "--help")
       DO_HELP="YES"
-      shift # past argument=value
+      shift
+      ;;
+    "--loud")
+      DO_QUIET_COMPOSER=""
+      DO_QUIET_CURL=""
+      shift
       ;;
   esac
 done
