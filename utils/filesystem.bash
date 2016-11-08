@@ -48,7 +48,7 @@ rmlink() {
 # Output a path, cross platform.
 # To capture as variable, be sure to call like: $(realpath_cp PATH)
 realpath_cp() {
-  REALPATH_CP_INTERNAL=`realpath $1`
+  REALPATH_CP_INTERNAL=`readlink -f $1`
   if windows; then
     REALPATH_CP_INTERNAL=`cygpath -w $REALPATH_CP_INTERNAL`
   fi
