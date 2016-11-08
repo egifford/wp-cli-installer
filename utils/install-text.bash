@@ -1,4 +1,4 @@
-source ${UTILS_DIR}text.bash
+source ${UTILS_DIR}/text.bash
 
 VERSION_TEXT="WP-CLI installer, version $VERSION"
 
@@ -17,5 +17,5 @@ Options:
 WAITING_TEXT="Installing..."
 
 FINISHED_TEXT="
-WP-CLI is now installed. Check if it is working by running '${BIN_DIR}wp --info'.
+WP-CLI is now installed. Check if it is working by running '${BIN_DIR}/wp --info'.
 For a global installation, add this package's bin directory to your path ($BIN_DIR_ABSOLUTE)."
