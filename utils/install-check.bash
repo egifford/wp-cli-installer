@@ -1,6 +1,6 @@
 # If vendor directory already exists, WP-CLI is probably already installed.
-if [ -d "vendor" ]; then
-  echo "A 'vendor' directory is already present from a previous Composer installation. Delete it and then run this script again."
+if [ -d "${VENDOR_DIR_ABSOLUTE}" ]; then
+  echo "A '${VENDOR_DIR_ABSOLUTE}' directory is already present from a previous Composer installation. Delete it and then run this script again."
   exit 0
   echo ""
 fi  

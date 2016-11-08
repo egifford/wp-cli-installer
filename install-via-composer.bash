@@ -8,6 +8,7 @@ source ${UTILS_DIR}filesystem.bash
 
 # Capture/set the absolute path for BIN_DIR.
 BIN_DIR_ABSOLUTE=$(realpath_cp $PWD/${BIN_DIR})
+VENDOR_DIR_ABSOLUTE=$(realpath_cp $PWD/${VENDOR_DIR})
 
 # Include text variables.
 source ${UTILS_DIR}install-text.bash
@@ -28,7 +29,7 @@ echo "$WAITING_TEXT"
 composer install --no-dev --optimize-autoloader${DO_QUIET_COMPOSER}
 
 # Setup a symlink to WP-CLI.
-link ${BIN_DIR}wp ../vendor/wp-cli/wp-cli/bin/wp
+link ${BIN_DIR}wp ${VENDOR_DIR_ABSOLUTE}/wp-cli/wp-cli/bin/wp
 
 # Let the user know.
 echo "$FINISHED_TEXT"
