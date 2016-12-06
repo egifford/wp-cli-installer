@@ -17,6 +17,6 @@
     }
   ],
   "require": {
-    "wp-cli/wp-cli": "0.25.0"
+    "wp-cli/wp-cli": "1.0.0"
   }
 }
