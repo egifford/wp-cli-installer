@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source ${UTILS_DIR}/text.bash
 
 VERSION_TEXT="WP-CLI switcher, version $VERSION"

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Thanks to http://stackoverflow.com/a/25394801
 
 # We still need this.

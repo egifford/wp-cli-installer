@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # This script requires that the following variables be set:
 # $VERSION_TEXT: More complete versioning statement.
 # $HELP_TEXT:    Detailed usage instructions
