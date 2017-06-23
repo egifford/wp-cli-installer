@@ -2,7 +2,7 @@
 
 source ${UTILS_DIR}/text.bash
 
-VERSION_TEXT="WP-CLI installer, version $VERSION"
+VERSION_TEXT="WP-CLI installer (via Composer), version $VERSION"
 
 HELP_TEXT="$VERSION_TEXT
 

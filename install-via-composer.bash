@@ -11,7 +11,7 @@ BIN_DIR_ABSOLUTE=$(realpath_cp $PWD/${BIN_DIR})
 VENDOR_DIR_ABSOLUTE=$(realpath_cp $PWD/${VENDOR_DIR})
 
 # Include text variables.
-source ${UTILS_DIR}/install-text.bash
+source ${UTILS_DIR}/install-composer-text.bash
 
 # Process command line arguments.
 source ${UTILS_DIR}/args.bash
