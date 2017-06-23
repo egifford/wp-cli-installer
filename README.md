@@ -56,3 +56,12 @@ This script has a few options:
   * For example: `switch-version-via-composer.bash --version`
 * To see lots of progress messages, use the `--loud` option.
   * For example: `switch-version-via-composer.bash --loud`
+  
+## An alternative to using this project
+If you have Composer installed and are familiar with it, you can skip using this project by using the following commands:
+* Create a directory for WP-CLI, something like: `/home/username/opt/wp-cli`. But use your actual `username`.
+* Navigate into that directory: `cd /home/username/opt/wp-cli`
+* Run this command: `composer create-project wp-cli/wp-cli .`
+* Optimize the install: `composer install --no-dev -o`
+* Run the following to check the install (it should print some diagnostic info): `./bin/wp --info`
+* Add the following to your path: `/home/username/opt/wp-cli/bin`
