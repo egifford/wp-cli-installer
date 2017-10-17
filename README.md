@@ -13,7 +13,7 @@ Helper scripts for managing WP-CLI with Composer.
 ## Installing the installer
 * Create a directory for this project.
   * This will also be where WP-CLI is installed.
-* Inside that directory, run (that last period is important): `git clone https://github.com/egifford/composer-installer.git .`
+* Inside that directory, run (that last period is important): `git clone https://github.com/egifford/wp-cli-installer .`
 * If not on Windows, make the scripts executable:
  * `chmod 744 install-via-composer.bash && chmod 744 install-via-curl.bash && chmod 744 switch-version-via-composer.bash`
 
