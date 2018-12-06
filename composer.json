@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "wp-cli/wp-cli": "1.4.0"
+    "wp-cli/wp-cli": "1.5.1"
   },
   "config": {
     "optimize-autoloader": true
