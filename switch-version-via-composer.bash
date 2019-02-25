@@ -27,8 +27,8 @@ echo "$WAITING_TEXT"
 
 # Use composer to install WP-CLI.
 rmlink ${BIN_DIR_ABSOLUTE}/wp
-composer remove wp-cli/wp-cli --quiet
-composer require wp-cli/wp-cli:$1 --update-no-dev --optimize-autoloader${DO_QUIET_COMPOSER}
+composer remove wp-cli/wp-cli wp-cli/wp-cli-bundle --quiet
+composer require wp-cli/wp-cli:$1 wp-cli/wp-cli-bundle:$1 --update-no-dev --optimize-autoloader${DO_QUIET_COMPOSER}
 
 # Setup a symlink to WP-CLI.
 link ${BIN_DIR_ABSOLUTE}/wp ${VENDOR_DIR_ABSOLUTE}/wp-cli/wp-cli/bin/wp
