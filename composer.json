@@ -14,8 +14,11 @@
     }
   ],
   "require": {
-    "wp-cli/wp-cli": "2.4.0",
-    "wp-cli/wp-cli-bundle": "2.4.0"
+    "wp-cli/wp-cli": "2.6.0",
+    "wp-cli/wp-cli-bundle": "2.6.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
   },
   "config": {
     "optimize-autoloader": true
