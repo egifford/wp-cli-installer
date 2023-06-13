@@ -25,7 +25,6 @@
       <path value="$PROJECT_DIR$/vendor/wp-cli/role-command" />
       <path value="$PROJECT_DIR$/vendor/wp-cli/rewrite-command" />
       <path value="$PROJECT_DIR$/vendor/wp-cli/search-replace-command" />
-      <path value="$PROJECT_DIR$/vendor/rmccue/requests" />
       <path value="$PROJECT_DIR$/vendor/wp-cli/scaffold-command" />
       <path value="$PROJECT_DIR$/vendor/wp-cli/shell-command" />
       <path value="$PROJECT_DIR$/vendor/wp-cli/server-command" />
