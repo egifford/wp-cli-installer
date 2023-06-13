@@ -1,7 +1,8 @@
 {
   "name":        "egifford/wp-cli-installer",
-  "description": "Helper scripts for managing WP-CLI with Composer.",
   "type":        "project",
+  "description": "Helper scripts for managing WP-CLI with Composer.",
+  "keywords":    [],
   "homepage":    "https://github.com/egifford/wp-cli-installer",
   "license": [
     "MIT"
@@ -14,13 +15,43 @@
     }
   ],
   "require": {
-    "wp-cli/wp-cli": "2.6.0",
-    "wp-cli/wp-cli-bundle": "2.6.0"
+    "php": ">=7.4",
+
+    "wp-cli/wp-cli":        "2.7.1",
+    "wp-cli/wp-cli-bundle": "2.7.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
+  "autoload": {
+    "psr-4": {
+    },
+    "files": [
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "prefer-stable": true,
+  "repositories": [
+  ],
   "config": {
+    "allow-plugins": {
+    },
+    "platform": {
+      "php": "7.4"
+    },
     "optimize-autoloader": true
-  }
+  },
+  "scripts": {
+    "post-install-cmd": [
+    ],
+    "post-update-cmd": [
+    ]
+  },
+  "extra": {
+  },
+  "bin": [
+  ]
 }
